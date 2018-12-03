@@ -1,6 +1,6 @@
 package VOs;
 
-class EverythingVO {
+public class SourcesVO {
 
 	private String category;
 	private String country;
@@ -37,13 +37,13 @@ class EverythingVO {
 	}
 
 
-	public EverythingVO() {
+	public SourcesVO() {
 		// TODO Auto-generated constructor stub
 		
 	}
 
 
-	public EverythingVO(String category, String country, String language) {
+	public SourcesVO(String category, String country, String language) {
 		super();
 		this.category = category;
 		this.country = country;
