@@ -24,10 +24,12 @@ class RequestNewsAPI {
 		
 		String resp = "";
         
-		URL newsAPI = new URL("https://newsapi.org/v2/" + URLEncoder.encode(params, "UTF-8")+"&apiKey="+apiKey);
+		URL newsAPI = new URL("https://newsapi.org/v2/" + params+"&apiKey="+apiKey);
 
 		URLConnection newsConnection = newsAPI.openConnection();
 	
+		System.out.println(newsAPI.getFile());
+		
 		newsConnection.setConnectTimeout(5000); 
 		newsConnection.setReadTimeout(5000);
      	      
